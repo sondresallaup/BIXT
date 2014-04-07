@@ -1,15 +1,15 @@
-function checkCookie()
-{
-
-var user = getCookie("username");
-if(user!="" && user!=null){
-	alert("Velkommen igjen " + user);
-}
-else{
-	user = prompt("Vennligst skriv inn ditt navn:","");
+function checkCookie(){
+	var user = getCookie("username");
 	if(user!="" && user!=null){
-		setCookie("username",user);
+
+		window.location.href = 'main.html';
+		//alert("Velkommen igjen " + user);
 	}
+	else{
+		user = prompt("Vennligst skriv inn ditt navn:","");
+		if(user!="" && user!=null){
+			setCookie("username",user);
+		}
 }
 
 function getCookie(cname){
