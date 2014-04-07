@@ -4,13 +4,13 @@ function checkCookie(){
 		window.location.href = 'main.html';
 	}
 	else{
-		user = prompt("Brukernavn:","");
+		/*user = prompt("Brukernavn:","");
 		if(user=="sondre"){
 			password = prompt("Passord:","");
 			if(password == "heihei"){
 				setCookie("brukernavn",user);
 			}
-		}
+		}*/
 }
 
 function getCookie(cname){
