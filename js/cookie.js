@@ -1,5 +1,5 @@
 function checkCookie(){
-	var user = getCookie("username");
+	var user = getCookie("brukernavn");
 	if(isLoggedIn(user)){
 		window.location.href = 'main.html';
 	}
@@ -8,7 +8,7 @@ function checkCookie(){
 		if(user=="sondre"){
 			password = prompt("Passord:","");
 			if(password == "heihei"){
-				setCookie("username",user);
+				setCookie("brukernavn",user);
 			}
 		}
 }
