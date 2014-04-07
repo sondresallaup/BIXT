@@ -1,14 +1,15 @@
 function checkCookie(){
 	var user = getCookie("username");
-	if(user!="" && user!=null){
-
+	if(isLoggedIn(user)){
 		window.location.href = 'main.html';
-		//alert("Velkommen igjen " + user);
 	}
 	else{
-		user = prompt("Vennligst skriv inn ditt navn:","");
-		if(user!="" && user!=null){
-			setCookie("username",user);
+		user = prompt("Brukernavn:","");
+		if(user=="sondre"){
+			password = prompt("Passord:","");
+			if(password == "heihei"){
+				setCookie("username",user);
+			}
 		}
 }
 
@@ -19,5 +20,9 @@ function getCookie(cname){
 
 function setCookie(cname,cvalue){
 	window.localStorage.setItem(cname,cvalue);
+}
+
+function isLoggedIn(user){
+	return (user!="" || user!=null);
 }
 }
