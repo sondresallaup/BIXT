@@ -2,7 +2,7 @@ function checkCookie()
 {
 
 var user = getCookie("username");
-if(user!=""){
+if(user!="" && user!=null){
 	alert("Velkommen igjen " + user);
 }
 else{
@@ -20,16 +20,4 @@ function getCookie(cname){
 function setCookie(cname,cvalue){
 	window.localStorage.setItem(cname,cvalue);
 }
-
-
-
-
-window.localStorage.setItem("tiss","bajs");
-
-var value = window.localStorage.getItem("tiss");
-
-var keyName = window.localStorage.key(0);
-
-alert(value);
-
 }
