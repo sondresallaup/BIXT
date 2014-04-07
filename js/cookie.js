@@ -25,4 +25,6 @@ function setCookie(cname,cvalue){
 function isLoggedIn(user){
 	return (user!="" && user!=null);
 }
+
+
 }
