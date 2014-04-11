@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+    id        = "io.cordova.helloCordova"
+    version   = "2.0.0">
+<name>APP NAME</name>
+
+<description>
+    DESCRIPTION
+</description>
+
+<author href="YOUR URL" email="YOUR EMAIL">
+    YOUR NAME
+</author>
+
+<access origin="*"/>
+
+<gap:splash src="img/splash.png" gap:platform="android" width="320" height="480" />
+
+</widget>
