@@ -14,10 +14,20 @@
     <div class="navbar-header">
         <ul class="nav nav-justified">
             <li><a target="content" class="navbar-brand" href="http://sondresallaup.com/ikea/jsBLIXT/pages/friends.php"><span class="glyphicon glyphicon-heart"></span></a></li>
-            <li><a target="content" class="navbar-brand" href="../pages/camera.html"><span class="glyphicon glyphicon-camera"></span></a></li>
+
+            <div class="app">
+            <li><button onclick="app.takePicture();"><span class="glyphicon glyphicon-camera"></span></button></li>
+        </div>
+
             <li><a target="content" class="navbar-brand" href="http://sondresallaup.com/ikea/jsBLIXT/pages/outbox.php"><span class="glyphicon glyphicon-envelope"></span></a></li>
         </ul>
             </div>
         </nav>
+
+        <script type="text/javascript" src="../js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+
     </body>
 </html>
