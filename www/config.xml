@@ -16,7 +16,7 @@
     <author href="http://sondresallaup.com" email="support@sondresallaup.com">
         Sondre Sallaup
     </author>
- <preference name="phonegap-version" value="3.0.0" />
+ <preference name="phonegap-version" value="3.3.0" />
 
 <gap:splash src="img/splash.png" gap:platform="android" gap:density="ldpi" />
 <gap:splash src="img/splash.png" gap:platform="android" gap:density="mdpi" />
